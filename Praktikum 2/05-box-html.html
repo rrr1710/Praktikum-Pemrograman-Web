@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-selector=1.0"/>
+        <title>CSS Box Model</title>
+        <link rel="stylesheet" href="05-box-model.css">
+    </head>
+    <body>
+        <div class="section">
+            <h2>What is a Box Model</h2>
+            <p>
+                Every element of an HTML can be considered its own box that is comprised of :
+            </p>
+            <ul>
+                <li><strong>Content: </strong>The given content of an element</li>
+                <li><strong>Padding: </strong>The space between content and border</li>
+                <li><strong>Border : </strong>The Edge border of an element</li>
+                <li>
+                    <strong>Margin: </strong>The Space outside the border that seperates each elements
+                </li>
+            </ul>
+        </div>
+        <div class="section">
+            <p class="box-labels">
+                <span class="label-margin">Margin</span>
+                <span class="label-border">Border</span>
+                <span class="label-padding">Padding</span>
+                <span class="label-content">Content</span>
+            </p>
+        </div>
+        <div class="section">
+            <h2>Margin</h2>
+
+            <h3>Margin Individual</h3>
+            <div class="margin-top">Top Margin 20px</div>
+            <div class="margin-right">Right Margin 30px</div>
+            <div class="margin-bottom">Bottom Margin 25px</div>
+            <div class="margin-left">Left Margin 40px</div>
+
+            <h3>Margin Shorthand</h3>
+            <div class="margin-all">All Sided Margin 15px</div>
+            <div class="margin-vertical-horizontal">Margin Vertical 20px, Horizonta 30px</div>
+            <div class="margin-individual-short">Margin: Top 10px, right 20px, bottom 15px, left 2px</div>
+
+            <h3>Auto Centering Margin</h3>
+            <div class="negative-margin-container">
+                <div class="negative-margin">Element with Negative Margin</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Padding</h2>
+
+            <h3>Padding Individual</h3>
+            <div class="padding-top">Top Padding 15px</div>
+            <div class="padding-right">Right Padding 25px</div>
+            <div class="padding-bottom">Bottom Padding 20px</div>
+            <div class="padding-left">Left Padding 30px</div>
+
+            <h3>Padding Shorthand</h3>
+            <div class="padding-all">All Sided Padding 20px</div>
+            <div class="padding-vertical-horizontal">Padding vertical 15px, horizontal 25px</div>
+            <div class="padding-">Padding:  top 5px, right 15px, bottom 10px, left 20px</div>
+
+            <h3>Padding vs Content Size</h3>
+            <div class="padding-content-demo">
+                <div class="with-padding">With Padding 20px</div>
+                <div class="without-padding">Without Padding</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Border</h2>
+
+            <h3>Border Style</h3>
+            <div class="border-solid">Solid Border</div>
+            <div class="border-dashed">Dashed Border</div>
+            <div class="border-dotted">Dotted Border</div>
+            <div class="border-double">Double Border</div>
+            <div class="border-groove">Groove Border</div>
+            <div class="border-ridge">Ridge Border</div>
+            <div class="border-inset">Inset Border</div>
+            <div class="border-outset">Outset Border</div>
+            
+            <h3>Border Width</h3>
+            <div class="border-thin">Thin Border(1px)</div>
+            <div class="border-medium">Medium Border(3px)</div>
+            <div class="border-thick">Thick Border(5px)</div>
+            <div class="border-custom-width">Custom Border(8px)</div>
+            
+            <h3>Border Color</h3>
+            <div class="border-colored">Colored Border </div>
+            
+            <h3>Border Individual</h3>
+            <div class="border-individual">Specific Sided Borders</div>
+
+            <h3>Border Radius</h3>
+            <div class="border-radius-demo">
+                <div class="radius-small">Radius 5px</div>
+                <div class="radius-medium">Radius 15px</div>
+                <div class="radius-large">Radius 25px</div>
+                <div class="radius-circle">Radius 50% (circle)</div>
+                <div class="radius-individual">Specific Sided Radius</div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Box Sizing</h2>
+
+            <h3>Content Box (Default)</h3>
+            <div class="box-sizing-demo">
+                <div class="content-box">
+                    Content Box: width is not included in padding and border
+                    <br/> Total Width = Width + Padding + Border
+                </div>
+            </div>
+
+            <h3>Border Box</h3>
+            <div class="box-sizing-demo">
+                <div class="border-box">
+                    Border Box: Width included in padding and border
+                    <br/> Total Width = Width
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Practical Examples</h2>
+
+            <h3>Card Component</h3>
+            <div class="card">
+                <div class="card-header">
+                    <h4>Title Card</h4>
+                </div>
+                <div class="card-body">
+                    <p>
+                        The contents of this card is using a combination of margin, padding, and border to make a neat layout.
+                    </p>
+                    <button class="card-button">Action</button>
+                </div>
+            </div>
+
+            <h3>Button Styles</h3>
+            <div class="button-demo">
+                <button class="btn-primary">Primary Button</button>
+                <button class="btn-secondary">Secondary Button</button>
+                <button class="btn-outline">Outline Button</button>
+                <button class="btn-rounded">Rounded Button</button>
+            </div>
+
+            <h3>Layout with Box Model</h3>
+            <div class="layout-demo">
+                <div class="sidebar">
+                    <h4>Sidebar</h4>
+                    <ul>
+                        <li>Menu1</li>
+                        <li>Menu2</li>
+                        <li>Menu3</li>
+                    </ul>
+                </div>
+                <div class="main-content">
+                    <h4>Main Content</h4>
+                    <p>
+                        Main Content Area uses margin and padding for accurate spacing
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Tips: Using Browser Inspect</h2>
+            <div class="inspector-demo">
+                <p>
+                    Right Click on this element -> Inspect this element to see athis box mdel visually with the browser developer tools.
+                </p>
+                <div class="inspect-me">
+                    Element to inspect
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

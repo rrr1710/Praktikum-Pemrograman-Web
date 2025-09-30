@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-selector=1.0"/>
+        <title>Basic CSS Layout</title>
+        <link rel="stylesheet" href="06-layout-dasar.css">
+    </head>
+    <body>
+        <h1>Learning CSS Basic layout</h1>
+
+        <div class="section">
+            <h2>Display Property</h2>
+
+            <h3>Block Elements</h3>
+            <div class="display-block">Div 1(Block)</div>
+            <div class="display-block">Div 2(Block)</div>
+            <p>Block elements takes the full width and makes a new line break</p>
+
+            <h3>Inline Elements</h3>
+            <span class="display-inline">Span 1(Inline)</span>
+            <span class="display-inline">Span 2(Inline)</span>
+            <span class="display-inline">Span 3(Inline)</span>
+            <p>Inline elements only takes width according to its content.</p>
+
+            <h3>Inline-Block Elements</h3>
+            <div class="display-inline-block">Box 1</div>
+            <div class="display-inline-block">Box 2</div>
+            <div class="display-inline-block">Box 3</div>
+            <p>Inline-block combines both Inline and block.</p>
+
+            <h3>None (Hidden)</h3>
+            <div class="display-none">This element is hidden</div>
+            <p>Elements with none display are not shown and does not take up space</p>
+        </div>
+
+        <div class="section">
+            <h2>Position Property</h2>
+
+            <h3>Static (Default)</h3>
+            <div class="position-container">
+                <div class="position-static">Position Static</div>
+            </div>
+
+            <h3>Relative</h3>
+            <div class="position-container">
+                <div class="position-relative">
+                    Relative Position (shifts from original point)
+                </div>
+            </div>
+
+            <h3>Absoulte</h3>
+            <div class="position-container relative-parent">
+                <div class="position-absolute">Position Absolute</div>
+                <p>Elements with absolute position will exit the normal flow.</p>
+            </div>
+
+            <h3>Fixed</h3>
+            <div class="sticky-container">
+                <div class="position-sticky">
+                    Sticky Position (Scroll this <i class="fas fa-container-storage    "></i>)
+                </div>
+                <div class="scroll-content">
+                    <p>Lorem ipsum dolor sit amet, consectur adipscing elit.</p>
+                    <p>Sed do eismod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                    <p>Excepteur sint eccaecat cupidatat non proident, sunt in culpa.</p>
+                    <p>Qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectur adipscing elit.</p>
+                    <p>Sed do eismod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Float Property</h2>
+
+            <h3>FLoat left</h3>
+            <div class="float-container">
+                <div class="float-left">Float Left</div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectur adipscing elit,
+                    Sed do eismod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+
+            <h3>FLoat Right</h3>
+            <div class="float-container">
+                <div class="float-right">Float Right</div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectur adipscing elit,
+                    Sed do eismod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+
+            <h3>Clear FLoat</h3>
+            <div class="float-container">
+                <div class="float-left">Float Left 1</div>
+                <div class="float-left">Float Left 2</div>
+                <div class="clear-float">This element uses clear :both</div>
+                <p>CLear is used to stop the effect of float.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Z-Index (Layering)</h2>
+            <div class="z-index-container">
+                <div class="z-index-1">z-index-1</div>
+                <div class="z-index-2">z-index-2</div>
+                <div class="z-index-3">z-index-3</div>
+            </div>
+            <p>Z-Index is used to layer elements. The bigger the value = the higher layer priority it has.</p>
+        </div>
+
+        <div class="section">
+            <h2>Overflow Property</h2>
+
+            <h3>Overflow Visible (Default)</h3>
+            <div class="overflow-container overflow-visible">
+                <div class="overflow-content">
+                    Content that overflows the size of the container will still show with overflow : visible (Default behavior).
+                </div>
+            </div>
+
+            <h3>Overflow Hidden</h3>
+            <div class="overflow-container overflow-hidden">
+                <div class="overflow-content">
+                    Content that overflows the size of the container will be cut 
+                    with overflow : hidden 
+                </div>
+            </div>
+
+            <h3>Overflow Scroll</h3>
+            <div class="overflow-container overflow-scroll">
+                <div class="overflow-content">
+                    Content that overflows the size of the container can be scrolled 
+                    with overflow : scroll. Scrollbar will always be shown.
+                </div>
+            </div>
+
+            <h3>Overflow Auto</h3>
+            <div class="overflow-container overflow-auto">
+                <div class="overflow-content">
+                    Content that overflows the size of the container can be scrolled
+                    with overflow : auto. Scrollbar will only be shown if needed 
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Flexbox (Modern Layout)</h2>
+
+            <h3>Basic Flexbox</h3>
+            <div class="flex-container">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+
+            <h3>Flex Direction</h3>
+            <div class="flex-container flex-column">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+
+            <h3>Justify Content</h3>
+            <div class="flex-container justify-center">
+                <div class="flex-item">Center</div>
+                <div class="flex-item">Aligned</div>
+            </div>
+
+            <div class="flex-container justify-between">
+                <div class="flex-item">Space</div>
+                <div class="flex-item">Between</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Practical Layout Examples</h2>
+
+            <h3>Two Column layout</h3>
+            <div class="two-column">
+                <div class="column-left">
+                    <h4>Left Column</h4>
+                    <p>Content for Left Column</p>
+                </div>
+                <div class="column-right">
+                    <h4>Right Column</h4>
+                    <p>Content for Right Column</p>
+                </div>
+            </div>
+
+            <h3>Three Column Layout</h3>
+            <div class="three-column">
+                <div class="column">
+                    <h4>Column</h4>
+                    <p>Content</p>
+                </div>
+                <div class="column">
+                    <h4>Column</h4>
+                    <p>Content</p>
+                </div>
+                <div class="column">
+                    <h4>Column</h4>
+                    <p>Content</p>
+                </div>
+            </div>
+
+            <h3>Header-Content-Footer Layout</h3>
+            <div class="page-layout">
+                <div class="page-header">
+                    <h4>Header</h4>
+                </div>
+                <div class="page-content">
+                    <h4>Content</h4>
+                    <p>Content Goes here</p>
+                </div>
+                <div class="page-footer">
+                    <h4>Footer</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Extra Content for Scrolling Test</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud excercitation ullamco laboris nisi ut aliquip ex ea 
+                commodo consequat.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud excercitation ullamco laboris nisi ut aliquip ex ea 
+                commodo consequat.
+            </p>
+            <p>
+                Scroll this page to see position effect : fixed on the above element
+            </p>
+        </div>
+    </body>    
+</html>
