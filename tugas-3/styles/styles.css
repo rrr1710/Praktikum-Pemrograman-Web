@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    margin:20px;
+    min-height: 100vh;
+    background: gray;
+    color: #333;
+    line-height: 1.6;
+}
+
+.feed-img {
+    width: 100%;
+    height: px;
+    object-fit: cover
+}
