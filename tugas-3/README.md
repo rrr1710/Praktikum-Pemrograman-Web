@@ -1,4 +1,4 @@
-# TUGAS 2 : 
+# TUGAS 3 : 
 
 ## **Bootstrap**
 
@@ -9,4 +9,5 @@
 ## **Tailwind**
 - Pembagian grid-col dilakukan sedemikian rupa untuk memaksimalkan space gambar dan tetap memisahkan masing gambar 
 - Membuat jumlah pembagian kolom berbeda dengan full-width untuk mb
+
 - Memakai banyak utility class memperpanjang kode html sebagai tradeoff tidak perlu membuat class berbeda untuk semua component
